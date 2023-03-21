@@ -21,7 +21,7 @@ export class NewFilmeComponent {
   ) { }
 
   async createHandle(filme: Filme) {
-    console.log("Deu certo")
+    //console.log("Adicionou Filme")
     const formData = new FormData()
 
     // preenchendo os campos do formulário

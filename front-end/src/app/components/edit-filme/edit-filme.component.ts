@@ -33,7 +33,7 @@ export class EditFilmeComponent implements OnInit{
     }
 
     async editHandle(filme: Filme){
-      console.log("Testando edição")
+      //console.log("Testando edição")
 
       const id = this.filme.id
 
