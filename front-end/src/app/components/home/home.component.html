@@ -1,0 +1,27 @@
+<div class="home-container">
+    <!-- aqui entra um método de busca filme -->
+    <div *ngIf=" allFilmes.length > 0; else noFilmes">
+
+        <h2 class="cabecalho">Últimos filmes adicionados</h2>
+        <div class="search-container">
+            <form>
+                <fa-icon [icon]="faSearch"></fa-icon>
+                <input type="text" placeholder="Buscar..." (input)="search($event)">
+            </form>
+        </div>
+
+        <div class="filmes-container">
+            <div class="filmes" *ngFor="let filme of allFilmes">
+                <img src="{{ baseApiUrl }}uploads/{{filme.image}}" alt="{{filme.title}}">
+                <h6>Título: {{ filme.title }}</h6>
+                <p class="date">Postado em: {{ filme.created_at }}</p>
+                <p><a routerLink="filme/{{ filme.id }}">Clique para Detalhes</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <ng-template #noFilmes>
+        <h2>Nenhum filme para ser exibido</h2>
+    </ng-template>
+</div>

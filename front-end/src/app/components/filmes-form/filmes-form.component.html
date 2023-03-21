@@ -1,0 +1,55 @@
+<form (ngSubmit)="submit()" [formGroup]="filmeForm" #formDir="ngForm">
+    <input type="hidden" formControlName="id">
+
+    <div class="form-group">
+        <label for="title">Título do Filme</label>
+        <input 
+        type="text" 
+        placeholder="Coloque um título" 
+        formControlName="title" 
+        required>
+        <!-- Divi para a validação do title -->
+        <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="title.errors?.['required']"></p>
+            <p>O título é obrigatório</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="author">Autor do filme</label>
+        <input 
+        type="text" 
+        id="author" 
+        placeholder="Autor"
+        formControlName="author" 
+        required>
+        <!-- Divi para a validação do author -->
+        <div *ngIf="author.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="author.errors?.['required']"></p>
+            <p>O author do filme é obrigatório</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="description">Descrição do Filme</label>
+        <textarea 
+        id="description" 
+        class="form-control" 
+        cols="5" rows="5"
+        placeholder="Coloque uma descrição" 
+        formControlName="description" 
+        required></textarea>
+        <!-- Divi para a validação do campo description -->
+        <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="description.errors?.['required']"></p>
+            <p>A descrição do fime é obrigatória</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="imagem">Isira uma imagem</label>
+        <input type="file" (change)="onFileSelected($event)">
+    </div>
+
+    <input type="submit" value="{{ btnText }}" id="btnText">    
+</form>

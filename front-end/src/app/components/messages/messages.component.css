@@ -1,0 +1,35 @@
+/* Vermelhor padrão color: #c91d1d; */
+.message{
+    position: fixed;
+    top: 3em;
+    width: 40%;
+    margin-left: 50%;
+    left: -20%;
+
+    z-index: 10;
+    background-color: #ffff;
+    border: 3px solid #c91d1d;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.message-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+
+
+.message-header button{
+    padding: .5em;
+    cursor: pointer;
+    height: 3em;
+
+}
+
+.message p{
+    font-size: 1.2em;
+}
