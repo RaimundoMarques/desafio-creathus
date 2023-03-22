@@ -1,11 +1,15 @@
 <div class="home-container">
     <!-- aqui entra um método de busca filme -->
     <div *ngIf=" allFilmes.length > 0; else noFilmes">
-        <div class="search-container">
-            <form>
+
+        <div class="busca-container">
+            <!-- <form>
                 <fa-icon [icon]="faSearch"></fa-icon>
-                <input type="text" placeholder="Buscar..." (input)="search($event)">
-            </form>
+                <input 
+                type="" 
+                placeholder="Buscar Filme..." 
+                (input)="search($event)">
+            </form> -->
         </div>
 
         <div class="filmes-container">

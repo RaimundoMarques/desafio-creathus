@@ -53,23 +53,23 @@ a:hover {
 
 /* configurações do input busca */
 
-.search-container {
+.busca-container {
   margin-bottom: 4em;
   width: 100%;
 }
 
-.search-container form {
+.busca-container form {
   width: 40%;
   position: relative;
 }
 
-.search-container fa-icon {
+.busca-container fa-icon {
   position: absolute;
   top: 8px;
   left: 8px;
 }
 
-.search-container input {
+.busca-container input {
   padding: 0.2em;
   width: 100%;
   text-align: center;

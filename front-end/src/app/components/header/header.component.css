@@ -16,7 +16,7 @@ nav h2 {
   transition: 0.4s;
   display: flex;
   align-items: center;
-  text-align: center;
+  margin-left: 80px;
 }
 
 h2:hover {
