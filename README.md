@@ -58,3 +58,34 @@ Para rodar a aplicação, execute:
 - ng serve
  
 Para verificar o fron-end, digite na URL: localhost:4200
+******************************************************************************
+
+Algumas especificaç do Projeto:
+					BACK-END
+					
+- Toda a criação do banco de dados, se dá dentro de um container simples do docker e que se encontra no documento:
+	docker-compose.yml
+
+- As configurações de conexão com o container do banco de dados, estão no arquivo '.env' na raiz do projeto
+
+- A criação da estrutura da tabela "filmes" , é feita através da migration já configurada com seus campos, tipos e que se encontra no caminho: 
+	database/migrations
+
+- Todas as imagens inseridas no sistema, irão para a pasta que se encontra no caminho abaixo:
+	tmp/uploads
+	- Para simular uma base de dados válida, fiz o upload de algumas imagens dentro desta pasta
+
+- Um arquivo chamado script-sql.txt, contém os inserts para simular uma lista de filmes válidos
+
+					FRONT-END
+					
+- Cada componente do projeto no Angular, possui uma estrutura contendo os arquivos .CSS, .HTML e .TS, onde irão conter os códigos de Estilo, Página e Lógica respectivamente de cada componente.
+
+- O "index.html" root se encontra na pasta raiz do projeto junto com um .CSS global
+
+
+	
+
+	
+	
+	
