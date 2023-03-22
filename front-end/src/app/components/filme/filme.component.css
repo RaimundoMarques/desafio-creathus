@@ -4,40 +4,39 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
 }
 
 h1 {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 img {
   max-width: 300px;
-  height: 300px;
+  height: 250px;
   margin-bottom: 0 auto 1em;
   border: 1px solid green;
 }
 
-.about-filme, 
-.actions{
-    width: 100%;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #CCC;
-    padding: 1.2em;
-    margin-bottom: 1em;
+.about-filme,
+.actions {
+  width: 100%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding: 1.2em;
+  margin-bottom: 1em;
 }
 
-
-.actions{
-    background-color: #e7e7e7;
+.actions {
+  background-color: #e7e7e7;
 }
 
-.about-filme h2, 
-.actions h2{
-    margin-bottom: 1em;
+.about-filme h2,
+.actions h2 {
+  margin-bottom: 1em;
 }
 
-#description{
-  text-align: left;
+.filme h5{
+  margin-top: .5em;
 }

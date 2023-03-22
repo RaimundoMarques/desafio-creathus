@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #000000;
 }
 
 .brand,
@@ -12,8 +12,15 @@ nav {
   align-items: center;
 }
 
-.brand h4 {
+nav h2 {
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+h2:hover {
+  color: #c91d1d;
 }
 
 .brand:hover {
@@ -21,7 +28,7 @@ nav {
 }
 
 .brand img {
-  width: 80px;
+  width: 100px;
   margin-right: 0.6em;
 }
 
@@ -39,7 +46,7 @@ a {
   color: #c91d1d;
 }
 
-a:hover {
+.links a:hover {
   background-color: rgb(231, 231, 231);
   color: #000000;
 }
