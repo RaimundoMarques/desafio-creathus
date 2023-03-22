@@ -5,8 +5,8 @@
     <h6> {{ filme.author }} </h6>
 
     <div class="about-filme">
-        <h3>Descrição: </h3>
-        <p> {{ filme.description }} </p>
+        <h2>Descrição: </h2>
+        <p id="description"> {{ filme.description }} </p>
     </div>
 
     <div class="actions">
@@ -14,8 +14,8 @@
             <fa-icon [icon]="faEdit"></fa-icon> Editar
         </a>
 
-        <button class="remove-btn" (click)="removeHandle(filme.id!)">
+        <a class="remove-btn" (click)="removeHandle(filme.id!)">
             <fa-icon [icon]="faTimes"></fa-icon> Excluir
-        </button>
+        </a>
     </div>
 </div>

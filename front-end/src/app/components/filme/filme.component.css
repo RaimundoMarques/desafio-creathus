@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -13,8 +13,10 @@ h1 {
 }
 
 img {
-  max-width: 500px;
+  max-width: 300px;
+  height: 300px;
   margin-bottom: 0 auto 1em;
+  border: 1px solid green;
 }
 
 .about-filme, 
@@ -23,6 +25,7 @@ img {
     padding-bottom: 1em;
     border-bottom: 1px solid #CCC;
     padding: 1.2em;
+    margin-bottom: 1em;
 }
 
 
@@ -30,7 +33,11 @@ img {
     background-color: #e7e7e7;
 }
 
-.about-filme h3, 
-.actions h3{
+.about-filme h2, 
+.actions h2{
     margin-bottom: 1em;
+}
+
+#description{
+  text-align: left;
 }
