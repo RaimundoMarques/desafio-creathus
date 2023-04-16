@@ -2,7 +2,7 @@
 Aplicação consiste em um site de filmes
 
 Primeiro passo:
-- Cria um diretório para clonar o repositório;
+- Crie um diretório para clonar o repositório;
 - Clone o repositório com o seguinte comando:
 	git clone git@github.com:RaimundoMarques/desafio-creathus.git
 
