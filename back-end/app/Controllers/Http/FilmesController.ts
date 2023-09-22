@@ -36,7 +36,7 @@ export default class FilmesController {
 
         const filme = await Filme.create(body)
         response.status(201)
-        
+
         return {
             msg: "Filme adicionado com sucesso!",
             data: filme,
@@ -58,7 +58,7 @@ export default class FilmesController {
 
         const filme = await Filme.findOrFail(params.id)
         await filme.delete()
-        
+
         return {
             message: "Filme deletado com sucesso!",
             data: filme,
@@ -93,8 +93,8 @@ export default class FilmesController {
 
         await filme.save()
 
-        return{
-            message: "Filme editado com sucesso!", 
+        return {
+            message: "Filme editado com sucesso!",
             data: filme,
         }
     }
