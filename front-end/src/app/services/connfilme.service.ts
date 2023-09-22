@@ -28,12 +28,10 @@ export class ConnfilmeService {
     return this.http.get<Response<Filme>>(url);
   }
 
-
   // solicitação de post no banco de dados
   createFilme(formData: FormData): Observable<FormData> {
     return this.http.post<FormData>(this.apiUrl, formData);
   }
-
 
   // método para remover um filme
   removeFilme(id: number){
