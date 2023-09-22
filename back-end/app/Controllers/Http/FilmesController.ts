@@ -7,6 +7,7 @@ export default class FilmesController {
 
     // método READ
     public async index() {
+
         const filme = await Filme.all()
         return {
             data: filme,
@@ -25,6 +26,7 @@ export default class FilmesController {
         const image = request.file('imagem', this.validationOptions)
 
         if (image) {
+
             const imageName = `${uuidv4()}.${image.extname}`
             await image.move(Application.tmpPath('uploads'), {
                 name: imageName
@@ -56,6 +58,7 @@ export default class FilmesController {
 
         const filme = await Filme.findOrFail(params.id)
         await filme.delete()
+        
         return {
             message: "Filme deletado com sucesso!",
             data: filme,
