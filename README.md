@@ -21,11 +21,9 @@ Para excutar a imagem do banco de dados em container docker, no diretório back-
 Na pasta back-end, execute os seguintes comandos antes de buildar:
 
 	npm i -g @adonisjs/cli
-	
+	npm i @adonisjs/lucid
 	node ace configure @adonisjs/lucid
 		Escolha o banco PostgreSQL -> In the terminal
-		
-	npm i @adonisjs/lucid
 	npm i uuid
 Edite o arquivo '.env.example' para '.env' e edite os campos:
 - PG_PORT=5441
